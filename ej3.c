@@ -4,9 +4,8 @@
 #include <stdio.h>
 
 int main() {
-    int i, num, suma, prom, cant;
+    int i, num, suma, prom, cant=0;
     printf("Ingrese 50 numeros enteros \n");
-
     for(i=0;i<5;i++) {
         scanf("%d", &num);
         if(num%2==0) {
@@ -15,7 +14,7 @@ int main() {
             prom=suma/cant;
         }
     }
-    printf("%d", cant);
-    printf("%d", prom);
+    printf("%d \n", cant);
+    printf("el promedio de los numeros pares es: %d \n", prom);
     return 0;
 }
